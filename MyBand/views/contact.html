@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="keywords" content="My Band" />
+    <meta name="description" content="My Band | School Project" />
+    <meta name="author" content="Fabio van den Broek" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <script>
+        // Menu-toggle button
+
+        $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        // Scrolling Effect
+
+        $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+
+
+    </script>
+    <title>My Band</title>
+</head>
+<body lang="nl">
+
+        <div class="wrapper">
+                <nav>
+                    <div class="logo"></div>
+                    <ul>
+                        <li><a href="../MyBand/views/contact.html">Contact</a></li>
+                        <li><a href="../MyBand/views/album.html">Albums</a></li>
+                        <li><a class="active" href="../MyBand/index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+
+        <section class="sec1"></section>
+        <div class="header">
+            <h1>Contact us</h1>
+            <p>
+                Contact us if u want some information about the site or about upcoming events just ask away we're happy to help.<br>
+                Help us improve our site to give some feedback about specific parts of the site or if u see a bug contact us s.v.p.
+            </p>
+        
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="E-Mail" />
+                    <input type="text" id="msg" placeholder="Message" />
+                </form>
+                <a class="buttonStyle">Lets's Talk</a>
+            </div>
+        </div>
+        
+    <footer>
+    <h6>Copyright Fabio van den Broek MD1B</h6>
+    </footer>
+
+<script src="javascript/script.js"></script>
+        
+</body>
+</html>        
