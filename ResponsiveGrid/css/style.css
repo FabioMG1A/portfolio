@@ -1,0 +1,203 @@
+/* het importeren van een font doormiddel van google fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+html, body,h3 {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: #006BEE;
+}
+
+header{ padding: 2em;}
+header,aside {
+    background-color: #006BEE;
+    border-bottom: solid;
+    border-color: white;
+}
+h1, h3 {font-family: 'Roboto';}
+h1, .tagline {
+    color: white;
+    text-align: center;
+}
+
+img {
+  border-style: solid;
+  border-color: lightblue;
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-bottom: .2em;
+}
+
+.nummer {
+    background-color: lightblue;
+    color: #fff;
+    font-size: 3em;
+    width: 1.2em;
+    text-align: right;
+    padding: .2em;
+
+}
+
+.elementStyle {
+    grid-column: span 2;
+}
+
+article {
+    padding: 1em;
+}
+section img {
+    max-width: 100%;
+}
+aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside h3 {
+    background-color: #006BEE;
+    padding: 2em;
+    color: #fff;
+}
+
+aside a {
+    text-decoration: none;
+    background-color: lightblue;
+    padding: 2em;
+    display: block;
+    border-width: medium;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-color: white;
+}
+
+/* het hoveren van de linkjes */
+aside a:hover {
+    background-color: white;
+    color: #006BEE;
+}
+
+footer {
+    background-color: #006BEE;
+    color: white;
+    padding: 2em;
+}
+/* css "gridden" */
+@media screen and (min-width: 760px) {
+    .afb {
+        display: block;
+        background-image: url('../img/rozenBladeren.jpg');
+        background-size: cover;
+        background-position: center center;
+        border-style: solid;
+        border-color: lightblue;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* een layout geven van bepaalde grids */
+        grid-template-areas: "kop kop"
+        "t1 t2"
+        "t3 t4"
+        "t3 t5"
+        "afb t6"
+        "t7 aside"
+        "t8 aside"
+        "t9 aside"
+        "t10 aside"
+        "voet voet";
+    }
+    header {grid-area: kop; }
+    .twijfel {grid-area: t1; }
+    .probleem {grid-area: t2; }
+    .spontaan {grid-area: t3; }
+    .afb {grid-area: afb; }
+    .keuzes {grid-area: t4; }
+    .verschillen {grid-area: t5; }
+    .doel {grid-area: t6; }
+    .zegbaarheid {grid-area: t7; }
+    .interesse {grid-area: t8; }
+    .passie {grid-area: t9; }
+    .tijd {grid-area: t10; }
+    aside {grid-area: aside; }
+    footer {grid-area: voet; }
+
+    h1 {font-size: 4em;}
+
+    .artiekel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .artiekel h3 {grid-column: span 2;}
+    footer {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* een layout geven van bepaalde grids, maar geroteerd */
+        grid-template-areas: "kop kop kop"
+        "t1 t2 afb"
+        "t3 t4 afb"
+        "t5 t6 afb"
+        "aside t6 t7"
+        "aside t8 t9"
+        "aside t10 t10"
+        "aside voet voet";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* "Wie deze code pakt stinkt" ~ Fabio MD1B */
