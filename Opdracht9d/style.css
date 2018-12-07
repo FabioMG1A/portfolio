@@ -1,0 +1,31 @@
+@font-face {
+  font-family: KeeponTruckin;
+  src: url(KeeponTruckin.ttf);
+}
+
+body {
+  background-image: url("source.gif");
+  background-size: cover;
+}
+
+#myName {
+  margin: 1em 22%;
+  width: 50%;
+  margin-top: 200px;
+  padding: 60px;
+  text-align: center;
+  font-family: KeeponTruckin;
+  border: 3px solid #262626;
+  background-color: purple;
+  border-radius: 10px;
+  transition: background .5s;
+  font-size: 100px;
+  text-shadow: 4px 4px black;
+}
+
+h1  {
+  text-align: center;
+  color: purple;
+  font-size: 40px;
+  font-family: KeeponTruckin;
+}
